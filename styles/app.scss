@@ -7,6 +7,7 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 
 .body {
   margin: 0;
+  background: $brand-gray;
 }
 .top {
   display: flex;
@@ -14,8 +15,12 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
   justify-content: space-between;
   background: $brand_white;
 }
+.title {
+  font-size: 1.2rem;
+}
 .container {
   background: $brand-gray;
+  margin: 0;
 }
 .top-row {
   display: flex;
@@ -47,15 +52,27 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
   margin: 0;
 }
 .fa {
-  padding-left: 3%;
+  padding-left: 4%;
 }
 .main-img {
   width: 100%;
 }
 .image-container {
-  width: 1%;
-  margin-left: 10%;
+  width: 40%;
+  margin-left: 40%;
   margin-top: 3%;
+}
+
+.attack {
+  font-size: 2rem;
+}
+
+.head-top {
+  font-size: 1.3rem;
+}
+
+.head {
+  font-size: 1.5rem;
 }
 
 .actors {
