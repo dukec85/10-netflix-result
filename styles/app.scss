@@ -4,6 +4,7 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'font-awesome';
 @import 'box-sizing';
 @import 'variables';
+
 .body {
   margin: 0;
 }
@@ -23,24 +24,40 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 .top-next {
   display: flex;
   flex-direction: row;
+  font-size: 20%
 }
 .search {
+  display: flex;
+  align-items: center;
   background: $brand-blue;
   color: $brand-white;
+  padding: 1%;
+  margin: 0;
+  font-size: 1rem;
 }
 .title {
+  display: flex;
+  align-items: center;
   color: $brand-dark-gray;
 }
 .top {
   display: flex;
   flex-direction: row;
   background: $brand_white;
+  margin: 0;
+}
+.fa {
+  padding-left: 3%;
 }
 .main-img {
   width: 100%;
 }
 .image-container {
-  width: 0.01%;
+  width: 1%;
   margin-left: 10%;
   margin-top: 3%;
+}
+
+.actors {
+  padding-bottom: 5%;
 }
