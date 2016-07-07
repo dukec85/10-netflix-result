@@ -1,51 +1,32 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
-  <title>10-netflix-result-assignment</title>
+  <title>10-netflix-result</title>
   <link rel="stylesheet" href="/app.css">
 </head>
-
 <body>
-
-  <div>
-    <nav class="top">
-      <div class="title">Movie Title</div>
-      <button class="search">Search</button>
-    </nav>
-  </div>
-  <nav class="container">
-    <div class="top-row">
-      <div class="top-text">
-    <h1 class="attack">Attack on Titan</h1>
-    <p class="head-top"><b>Anime</b></p>
-    <p class="head-top"><b>4.6</b><i class="head-top fa fa-star" aria-hidden="true"></i></p>
-  </div>
-    <div class="image-container">
-    <img class="main-img" src="http://assets.vg247.com/current//2015/05/attack_on_titan.jpg" alt="">
+  <div class="search-container">
+    <div class="InputAddOn">
+      <input type="search" class="search-field" placeholder="Movie Title">
+      <button class="search-btn">Search</button>
     </div>
   </div>
-</div>
-    <h2 class="head"><b>Summary</b></h2>
-    <p>
-      For over a century, people have been living behind barricades to block out the giant Titans that threaten to destroy the human race.
-      When a Titan destroys his hometown, young Eren Yeager becomes determined to fight back.
-    </p>
-  <h2 class="head"><b>Actors</b></h2>
-  <p class="actors">
-    Yuki Kaji, Yui Ishikawa, Daisuke Ono, Hiro Shimono, Hiroshi Kamiya, Keiji Fujiwara, Kish Taniyama,
-    Romi Park, Ryoto Ashaka
-  </p>
-</nav>
 
+  <div class="movie">
 
-    <script src="/vendor.js" charset="utf-8"></script>
-    <script src="/app.js" charset="utf-8"></script>
+  </div>
 
-    <script type="text/javascript">
-    </script>
+  <script src="/vendor.js" charset="utf-8"></script>
+  <script src="/app.js" charset="utf-8"></script>
 
+  <script type="text/javascript">
+    let cat = require('index');
+    let netflixResult = require ('netflix-result');
+    let element = document.querySelector('.movie');
+    let btn = document.querySelector('.search-btn');
+    let field = document.querySelector('.search-field');
+    cat(element, btn, field);
+  </script>
 </body>
-
 </html>

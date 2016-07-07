@@ -1,15 +1,7 @@
 'use strict';
 import netflixResult from 'netflix-result';
-export default function(el) {
-
-
-  const Btn = el.querySelector('.search-btn');
-  let submission = el.querySelector('.search');
-  console.log(Btn);
-
-  function submit() {
-    netflixResult(el, submission.value);
-  }
-  Btn.addEventListener('click', submit);
-
+export default function (movie, btn, submission) {
+  btn.addEventListener('click', () => {
+    netflixResult(movie, submission.value);
+  });
 }
