@@ -8,7 +8,7 @@ export default function index(movie) {
     return netflixResult(movie, search.value);
   }
 
-  button.addEventListener('click', function () {
-    submit();
-  });
-}
+  button.addEventListener('click', function() {
+     submit();
+   });
+};
