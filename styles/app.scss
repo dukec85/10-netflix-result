@@ -5,76 +5,78 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'box-sizing';
 @import 'variables';
 
-.body {
+* {
+  font-family: Arial, sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
   margin: 0;
-  background: $brand-gray;
 }
-.top {
+
+.app {
+  width: 100%;
+  height: 100vh;
+  background: black;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background: $brand_white;
+  justify-content: center;
+  align-items: center;
 }
-.title {
-  font-size: 1.2rem;
-}
+
 .container {
-  background: $brand-gray;
-  margin: 0;
+  height: 35rem;
+  width: 50rem;
+  background: $brand-white;
+  overflow: auto;
 }
-.top-row {
-  display: flex;
-  flex-direction: row;
-}
-.top-next {
-  display: flex;
-  flex-direction: row;
-  font-size: 20%
-}
-.search {
-  display: flex;
-  align-items: center;
-  background: $brand-blue;
-  color: $brand-white;
-  padding: 1%;
-  margin: 0;
-  font-size: 1rem;
-}
-.title {
-  display: flex;
-  align-items: center;
-  color: $brand-dark-gray;
-}
-.top {
-  display: flex;
-  flex-direction: row;
-  background: $brand_white;
-  margin: 0;
-}
-.fa {
-  padding-left: 4%;
-}
-.main-img {
+
+.search-container {
   width: 100%;
 }
-.image-container {
-  width: 40%;
-  margin-left: 40%;
-  margin-top: 3%;
+
+.top-container {
+  display: flex;
+  margin: $gutter;
 }
 
-.attack {
-  font-size: 2rem;
+.title-container {
+  width: 50%;
 }
 
-.head-top {
-  font-size: 1.3rem;
+.inputAddOn {
+  display: flex;
 }
 
-.head {
-  font-size: 1.5rem;
+.inputAddOn-field {
+  flex: 1;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border: none;
 }
 
-.actors {
-  padding-bottom: 5%;
+.inputAddOn-item {
+  background: $brand-blue;
+  color: $brand-white;
+  border: none;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+.movie-title {
+  margin-top: 0;
+}
+
+.img-container {
+  width: 50%;
+  height: auto;
+}
+
+.poster {
+  width: 100%;
+  height: auto;
+}
+
+.bottom-container {
+  margin: $gutter;
 }
