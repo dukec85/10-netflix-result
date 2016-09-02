@@ -14,8 +14,8 @@
 
       <div class="search-container">
         <div class="inputAddOn">
-          <input type="search" class="inputAddOn-field" placeholder="Title">
-          <button class="=inputAddOn-item">Search</button>
+          <input type="search" value="clerks" class="inputAddOn-field" placeholder="Title">
+          <button class="inputAddOn-item">Search</button>
         </div>
       </div>
 
@@ -29,11 +29,9 @@
 
   <script type="text/javascript">
     let cat = require('index');
-    let netflixResult = require('netflix-result');
     let element = document.querySelector('.movie');
     let movie = document.querySelector('.inputAddOn-field').value;
     cat(element);
-    netflixResult(element);
   </script>
 </body>
 

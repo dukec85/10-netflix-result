@@ -4,11 +4,9 @@ export default function index(movie) {
   const search = document.querySelector('.inputAddOn-field');
   const button = document.querySelector('.inputAddOn-item');
 
-  function submit(movie) {
+  function submit() {
     return netflixResult(movie, search.value);
   }
-
-  button.addEventListener('click', function() {
-     submit();
-   });
+  button.addEventListener('click', submit);
+  submit();
 };
